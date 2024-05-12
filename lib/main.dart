@@ -1004,54 +1004,40 @@ class _MyHomePageState extends State<MyHomePage> {
                                     interpointIni.clear();
                                     interpointIni.add(
                                         const LatLng(-22.328239, -49.053016));
-                                  }
-
-                                  if (blocoAtual == 'Blocos C, D e E') {
+                                  } else if (blocoAtual == 'Blocos C, D e E') {
                                     interpointIni.clear();
                                     interpointIni.add(
                                         const LatLng(-22.328668, -49.052986));
-                                  }
-
-                                  if (blocoAtual == 'Blocos F e G') {
+                                  } else if (blocoAtual == 'Blocos F e G') {
                                     interpointIni.clear();
                                     interpointIni.add(
                                         const LatLng(-22.329061, -49.052811));
-                                  }
-
-                                  if (blocoAtual == 'Bloco J') {
+                                  } else if (blocoAtual == 'Bloco J') {
                                     interpointIni.clear();
                                     interpointIni.add(
                                         const LatLng(-22.330230, -49.052469));
-                                  }
-
-                                  if (blocoAtual == 'Bloco K') {
+                                  } else if (blocoAtual == 'Bloco K') {
                                     interpointIni.clear();
                                     interpointIni.add(
                                         const LatLng(-22.330603, -49.052341));
-                                  }
-
-                                  if (blocoAtual == 'Bloco O') {
+                                  } else if (blocoAtual == 'Bloco O') {
                                     interpointIni.clear();
                                     interpointIni.add(
                                         const LatLng(-22.331289, -49.052136));
-                                  }
-
-                                  if (blocoAtual == 'Bloco L') {
+                                  } else if (blocoAtual == 'Bloco L') {
                                     interpointIni.clear();
                                     interpointIni.add(
                                         const LatLng(-22.331819, -49.051816));
-                                  }
-
-                                  if (blocoAtual == 'Quadra') {
+                                  } else if (blocoAtual == 'Quadra') {
                                     interpointIni.clear();
                                     interpointIni.add(
                                         const LatLng(-22.332206, -49.051580));
-                                  }
-
-                                  if (blocoAtual == 'Enf') {
+                                  } else if (blocoAtual == 'Enf') {
                                     interpointIni.clear();
                                     interpointIni.add(
                                         const LatLng(-22.329561, -49.052894));
+                                  } else {
+                                    interpointIni.clear();
                                   }
 
                                   //bloco ab
@@ -1098,7 +1084,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   }
 
                                   //bloco C D E
-                                  if (index == 11 ||
+                                  else if (index == 11 ||
                                       index == 19 ||
                                       index == 26 ||
                                       index == 29 ||
@@ -1186,7 +1172,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   }
 
                                   //bloco F e G
-                                  if (index == 00 ||
+                                  else if (index == 00 ||
                                       index == 01 ||
                                       index == 02 ||
                                       index == 03 ||
@@ -1259,7 +1245,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   }
 
                                   //bloco J
-                                  if (index == 08 ||
+                                  else if (index == 08 ||
                                       index == 09 ||
                                       index == 24 ||
                                       index == 25 ||
@@ -1303,7 +1289,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   }
 
                                   //bloco K
-                                  if (index == 14 ||
+                                  else if (index == 14 ||
                                       index == 17 ||
                                       index == 22 ||
                                       index == 23 ||
@@ -1351,7 +1337,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   }
 
                                   //entre o bloco K e O
-                                  if (index == 65) {
+                                  else if (index == 65) {
                                     globalVariables.finalLoc.clear();
                                     globalVariables.finalLoc.add(
                                         const LatLng(-22.330629, -49.051396));
@@ -1370,7 +1356,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   }
 
                                   //bloco O
-                                  if (index == 07 ||
+                                  else if (index == 07 ||
                                       index == 16 ||
                                       index == 27 ||
                                       index == 59 ||
@@ -1402,7 +1388,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   }
 
                                   //bloco L
-                                  if (index == 06 ||
+                                  else if (index == 06 ||
                                       index == 31 ||
                                       index == 61 ||
                                       index == 62) {
@@ -1431,7 +1417,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   }
 
                                   //quadra
-                                  if (index == 41) {
+                                  else if (index == 41) {
                                     globalVariables.finalLoc.clear();
                                     globalVariables.finalLoc.add(
                                         const LatLng(-22.332123, -49.051210));
@@ -1451,7 +1437,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   }
 
                                   //rua
-                                  if (index == 15) {
+                                  else if (index == 15) {
                                     globalVariables.finalLoc.clear();
                                     globalVariables.finalLoc.add(
                                         const LatLng(-22.329662, -49.053067));
@@ -1482,6 +1468,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                         interpointFinal,
                                         globalVariables.finalLoc);
                                   }
+                                  Navigator.pop(context);
                                 },
                               ),
                               if (index < locais.length - 1) const Divider(),
