@@ -114,7 +114,7 @@ class Creditos extends StatelessWidget {
               child: Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
-                  'Mateus Fernandes',
+                  'Mateus Fernandes da Silva',
                   style: TextStyle(fontSize: 22.0),
                   textAlign: TextAlign.justify,
                 ),
@@ -158,21 +158,6 @@ class Creditos extends StatelessWidget {
             ),
             Image.asset(
               'assets/coordenadoria-de-extensao.jpg',
-            ),
-            Center(
-              child: ElevatedButton(
-                onPressed: () {
-                  Navigator.pop(context);
-                },
-                style: ElevatedButton.styleFrom(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
-                ),
-                child: const Text(
-                  'FECHAR',
-                  style: TextStyle(fontSize: 27),
-                ),
-              ),
             ),
           ],
         ),
