@@ -1,0 +1,37 @@
+buildscript {
+    ext.kotlin_version = '1.9.23' // Altere aqui
+    repositories {
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath ('com.android.tools.build:gradle:7.4.2')
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+
+    afterEvaluate {
+        tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
+            kotlinOptions {
+                jvmTarget = '1.8'
+                freeCompilerArgs += ['-Xskip-metadata-version-check']
+            }
+        }
+    }
+}
+
+rootProject.buildDir = '../build'
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
