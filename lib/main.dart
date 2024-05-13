@@ -402,7 +402,9 @@ class _MyHomePageState extends State<MyHomePage> {
             options: MapOptions(
               initialCenter: const LatLng(-22.32948788, -49.05182004),
               initialZoom: 17.4,
+              // ignore: deprecated_member_use
               maxBounds: limite,
+              // ignore: deprecated_member_use
               interactiveFlags:
                   InteractiveFlag.pinchZoom | InteractiveFlag.drag,
             ),
@@ -411,7 +413,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 urlTemplate: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
                 subdomains: const ['a', 'b', 'c'],
               ),
-              //#region Marcação User
               if (globalVariables.posicao != null)
                 MarkerLayer(
                   markers: [
@@ -441,7 +442,6 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ],
                 ),
-              //#endregion
               PolylineLayer(
                 polylines: [
                   Polyline(
@@ -451,7 +451,6 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ],
               ),
-              //#region Marcação labels
               MarkerLayer(
                 markers: [
                   Marker(
@@ -771,7 +770,6 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ],
               ),
-              //#endregion
             ],
           ),
           Positioned(

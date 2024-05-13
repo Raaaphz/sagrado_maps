@@ -1,3 +1,5 @@
+// ignore_for_file: no_leading_underscores_for_local_identifiers, use_build_context_synchronously
+
 import 'package:flutter/material.dart';
 
 class AeBTerreo extends StatelessWidget {
@@ -6,7 +8,7 @@ class AeBTerreo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     TransformationController transformationController =
-    TransformationController();
+        TransformationController();
 
     transformationController.value = Matrix4.identity()
       ..translate(0.5, 0.5)
@@ -20,7 +22,7 @@ class AeBTerreo extends StatelessWidget {
           Expanded(
             child: Stack(
               children: [
-                Container(
+                SizedBox(
                   width: 900,
                   height: 900,
                   child: InteractiveViewer(
@@ -44,10 +46,9 @@ class AeBTerreo extends StatelessWidget {
                     child: IconButton(
                       iconSize: 40,
                       icon: const Icon(Icons.keyboard_arrow_up_rounded),
-                      onPressed: () async{
-                        await showDialog(context: context,
-                            builder: (_) => AeBpiso1()
-                        );
+                      onPressed: () async {
+                        await showDialog(
+                            context: context, builder: (_) => const AeBpiso1());
                         Navigator.of(context).pop();
                       },
                     ),
@@ -60,6 +61,7 @@ class AeBTerreo extends StatelessWidget {
           const Text(
             'DICA: USE O CELULAR NA HORIZONTAL!',
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            textAlign: TextAlign.center,
           ),
           const SizedBox(height: 20),
         ],
@@ -69,10 +71,12 @@ class AeBTerreo extends StatelessWidget {
 }
 
 class AeBpiso1 extends StatelessWidget {
+  const AeBpiso1({super.key});
+
   @override
   Widget build(BuildContext context) {
     TransformationController _transformationController =
-    TransformationController();
+        TransformationController();
 
     _transformationController.value = Matrix4.identity()
       ..translate(0.5, 0.5)
@@ -86,7 +90,7 @@ class AeBpiso1 extends StatelessWidget {
           Expanded(
             child: Stack(
               children: [
-                Container(
+                SizedBox(
                   width: 900,
                   height: 900,
                   child: InteractiveViewer(
@@ -110,10 +114,10 @@ class AeBpiso1 extends StatelessWidget {
                     child: IconButton(
                       iconSize: 40,
                       icon: const Icon(Icons.keyboard_arrow_down_rounded),
-                      onPressed: () async{
-                        await showDialog(context: context,
-                            builder: (_) => const AeBTerreo()
-                        );
+                      onPressed: () async {
+                        await showDialog(
+                            context: context,
+                            builder: (_) => const AeBTerreo());
                         Navigator.of(context).pop();
                       },
                     ),
@@ -126,6 +130,7 @@ class AeBpiso1 extends StatelessWidget {
           const Text(
             'DICA: USE O CELULAR NA HORIZONTAL!',
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            textAlign: TextAlign.center,
           ),
           const SizedBox(height: 20),
         ],
@@ -135,10 +140,12 @@ class AeBpiso1 extends StatelessWidget {
 }
 
 class CDETerreo extends StatelessWidget {
+  const CDETerreo({super.key});
+
   @override
   Widget build(BuildContext context) {
     TransformationController _transformationController =
-    TransformationController();
+        TransformationController();
 
     _transformationController.value = Matrix4.identity()
       ..translate(0.5, 0.5)
@@ -152,7 +159,7 @@ class CDETerreo extends StatelessWidget {
           Expanded(
             child: Stack(
               children: [
-                Container(
+                SizedBox(
                   width: 900,
                   height: 900,
                   child: InteractiveViewer(
@@ -176,10 +183,9 @@ class CDETerreo extends StatelessWidget {
                     child: IconButton(
                       iconSize: 40,
                       icon: const Icon(Icons.keyboard_arrow_up_rounded),
-                      onPressed: () async{
-                        await showDialog(context: context,
-                            builder: (_) => CDEPiso1()
-                        );
+                      onPressed: () async {
+                        await showDialog(
+                            context: context, builder: (_) => const CDEPiso1());
                         Navigator.of(context).pop();
                       },
                     ),
@@ -192,6 +198,7 @@ class CDETerreo extends StatelessWidget {
           const Text(
             'DICA: USE O CELULAR NA HORIZONTAL!',
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            textAlign: TextAlign.center,
           ),
           const SizedBox(height: 20),
         ],
@@ -201,10 +208,12 @@ class CDETerreo extends StatelessWidget {
 }
 
 class CDEPiso1 extends StatelessWidget {
+  const CDEPiso1({super.key});
+
   @override
   Widget build(BuildContext context) {
     TransformationController _transformationController =
-    TransformationController();
+        TransformationController();
 
     _transformationController.value = Matrix4.identity()
       ..translate(0.5, 0.5)
@@ -218,7 +227,7 @@ class CDEPiso1 extends StatelessWidget {
           Expanded(
             child: Stack(
               children: [
-                Container(
+                SizedBox(
                   width: 900,
                   height: 900,
                   child: InteractiveViewer(
@@ -242,10 +251,10 @@ class CDEPiso1 extends StatelessWidget {
                     child: IconButton(
                       iconSize: 40,
                       icon: const Icon(Icons.keyboard_arrow_down_rounded),
-                      onPressed: () async{
-                        await showDialog(context: context,
-                            builder: (_) => CDETerreo()
-                        );
+                      onPressed: () async {
+                        await showDialog(
+                            context: context,
+                            builder: (_) => const CDETerreo());
                         Navigator.of(context).pop();
                       },
                     ),
@@ -258,6 +267,7 @@ class CDEPiso1 extends StatelessWidget {
           const Text(
             'DICA: USE O CELULAR NA HORIZONTAL!',
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            textAlign: TextAlign.center,
           ),
           const SizedBox(height: 20),
         ],
@@ -267,10 +277,12 @@ class CDEPiso1 extends StatelessWidget {
 }
 
 class FeGTerreo extends StatelessWidget {
+  const FeGTerreo({super.key});
+
   @override
   Widget build(BuildContext context) {
     TransformationController _transformationController =
-    TransformationController();
+        TransformationController();
 
     _transformationController.value = Matrix4.identity()
       ..translate(0.5, 0.5)
@@ -284,7 +296,7 @@ class FeGTerreo extends StatelessWidget {
           Expanded(
             child: Stack(
               children: [
-                Container(
+                SizedBox(
                   width: 900,
                   height: 900,
                   child: InteractiveViewer(
@@ -308,10 +320,9 @@ class FeGTerreo extends StatelessWidget {
                     child: IconButton(
                       iconSize: 40,
                       icon: const Icon(Icons.keyboard_arrow_up_rounded),
-                      onPressed: () async{
-                        await showDialog(context: context,
-                            builder: (_) => FeGPiso1()
-                        );
+                      onPressed: () async {
+                        await showDialog(
+                            context: context, builder: (_) => const FeGPiso1());
                         Navigator.of(context).pop();
                       },
                     ),
@@ -324,6 +335,7 @@ class FeGTerreo extends StatelessWidget {
           const Text(
             'DICA: USE O CELULAR NA HORIZONTAL!',
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            textAlign: TextAlign.center,
           ),
           const SizedBox(height: 20),
         ],
@@ -333,10 +345,12 @@ class FeGTerreo extends StatelessWidget {
 }
 
 class FeGPiso1 extends StatelessWidget {
+  const FeGPiso1({super.key});
+
   @override
   Widget build(BuildContext context) {
     TransformationController _transformationController =
-    TransformationController();
+        TransformationController();
 
     _transformationController.value = Matrix4.identity()
       ..translate(0.5, 0.5)
@@ -350,7 +364,7 @@ class FeGPiso1 extends StatelessWidget {
           Expanded(
             child: Stack(
               children: [
-                Container(
+                SizedBox(
                   width: 900,
                   height: 900,
                   child: InteractiveViewer(
@@ -374,10 +388,10 @@ class FeGPiso1 extends StatelessWidget {
                     child: IconButton(
                       iconSize: 40,
                       icon: const Icon(Icons.keyboard_arrow_down_rounded),
-                      onPressed: () async{
-                        await showDialog(context: context,
-                            builder: (_) => FeGTerreo()
-                        );
+                      onPressed: () async {
+                        await showDialog(
+                            context: context,
+                            builder: (_) => const FeGTerreo());
                         Navigator.of(context).pop();
                       },
                     ),
@@ -390,6 +404,7 @@ class FeGPiso1 extends StatelessWidget {
           const Text(
             'DICA: USE O CELULAR NA HORIZONTAL!',
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            textAlign: TextAlign.center,
           ),
           const SizedBox(height: 20),
         ],
@@ -399,10 +414,12 @@ class FeGPiso1 extends StatelessWidget {
 }
 
 class JeKTerreo extends StatelessWidget {
+  const JeKTerreo({super.key});
+
   @override
   Widget build(BuildContext context) {
     TransformationController _transformationController =
-    TransformationController();
+        TransformationController();
 
     _transformationController.value = Matrix4.identity()
       ..translate(0.5, 0.5)
@@ -416,7 +433,7 @@ class JeKTerreo extends StatelessWidget {
           Expanded(
             child: Stack(
               children: [
-                Container(
+                SizedBox(
                   width: 900,
                   height: 900,
                   child: InteractiveViewer(
@@ -440,10 +457,9 @@ class JeKTerreo extends StatelessWidget {
                     child: IconButton(
                       iconSize: 40,
                       icon: const Icon(Icons.keyboard_arrow_up_rounded),
-                      onPressed: () async{
-                        await showDialog(context: context,
-                            builder: (_) => JeKPiso1()
-                        );
+                      onPressed: () async {
+                        await showDialog(
+                            context: context, builder: (_) => const JeKPiso1());
                         Navigator.of(context).pop();
                       },
                     ),
@@ -456,6 +472,7 @@ class JeKTerreo extends StatelessWidget {
           const Text(
             'DICA: USE O CELULAR NA HORIZONTAL!',
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            textAlign: TextAlign.center,
           ),
           const SizedBox(height: 20),
         ],
@@ -465,10 +482,12 @@ class JeKTerreo extends StatelessWidget {
 }
 
 class JeKPiso1 extends StatelessWidget {
+  const JeKPiso1({super.key});
+
   @override
   Widget build(BuildContext context) {
     TransformationController _transformationController =
-    TransformationController();
+        TransformationController();
 
     _transformationController.value = Matrix4.identity()
       ..translate(0.5, 0.5)
@@ -482,7 +501,7 @@ class JeKPiso1 extends StatelessWidget {
           Expanded(
             child: Stack(
               children: [
-                Container(
+                SizedBox(
                   width: 900,
                   height: 900,
                   child: InteractiveViewer(
@@ -506,10 +525,9 @@ class JeKPiso1 extends StatelessWidget {
                     child: IconButton(
                       iconSize: 40,
                       icon: const Icon(Icons.keyboard_arrow_up_rounded),
-                      onPressed: () async{
-                        await showDialog(context: context,
-                            builder: (_) => JeKPiso2()
-                        );
+                      onPressed: () async {
+                        await showDialog(
+                            context: context, builder: (_) => const JeKPiso2());
                         Navigator.of(context).pop();
                       },
                     ),
@@ -526,10 +544,10 @@ class JeKPiso1 extends StatelessWidget {
                     child: IconButton(
                       iconSize: 40,
                       icon: const Icon(Icons.keyboard_arrow_down_rounded),
-                      onPressed: () async{
-                        await showDialog(context: context,
-                            builder: (_) => JeKTerreo()
-                        );
+                      onPressed: () async {
+                        await showDialog(
+                            context: context,
+                            builder: (_) => const JeKTerreo());
                         Navigator.of(context).pop();
                       },
                     ),
@@ -542,6 +560,7 @@ class JeKPiso1 extends StatelessWidget {
           const Text(
             'DICA: USE O CELULAR NA HORIZONTAL!',
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            textAlign: TextAlign.center,
           ),
           const SizedBox(height: 20),
         ],
@@ -551,10 +570,12 @@ class JeKPiso1 extends StatelessWidget {
 }
 
 class JeKPiso2 extends StatelessWidget {
+  const JeKPiso2({super.key});
+
   @override
   Widget build(BuildContext context) {
     TransformationController _transformationController =
-    TransformationController();
+        TransformationController();
 
     _transformationController.value = Matrix4.identity()
       ..translate(0.5, 0.5)
@@ -568,7 +589,7 @@ class JeKPiso2 extends StatelessWidget {
           Expanded(
             child: Stack(
               children: [
-                Container(
+                SizedBox(
                   width: 900,
                   height: 900,
                   child: InteractiveViewer(
@@ -592,10 +613,9 @@ class JeKPiso2 extends StatelessWidget {
                     child: IconButton(
                       iconSize: 40,
                       icon: const Icon(Icons.keyboard_arrow_up_rounded),
-                      onPressed: () async{
-                        await showDialog(context: context,
-                            builder: (_) => JeKPiso3()
-                        );
+                      onPressed: () async {
+                        await showDialog(
+                            context: context, builder: (_) => const JeKPiso3());
                         Navigator.of(context).pop();
                       },
                     ),
@@ -612,10 +632,9 @@ class JeKPiso2 extends StatelessWidget {
                     child: IconButton(
                       iconSize: 40,
                       icon: const Icon(Icons.keyboard_arrow_down_rounded),
-                      onPressed: () async{
-                        await showDialog(context: context,
-                            builder: (_) => JeKPiso1()
-                        );
+                      onPressed: () async {
+                        await showDialog(
+                            context: context, builder: (_) => const JeKPiso1());
                         Navigator.of(context).pop();
                       },
                     ),
@@ -628,6 +647,7 @@ class JeKPiso2 extends StatelessWidget {
           const Text(
             'DICA: USE O CELULAR NA HORIZONTAL!',
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            textAlign: TextAlign.center,
           ),
           const SizedBox(height: 20),
         ],
@@ -637,10 +657,12 @@ class JeKPiso2 extends StatelessWidget {
 }
 
 class JeKPiso3 extends StatelessWidget {
+  const JeKPiso3({super.key});
+
   @override
   Widget build(BuildContext context) {
     TransformationController _transformationController =
-    TransformationController();
+        TransformationController();
 
     _transformationController.value = Matrix4.identity()
       ..translate(0.5, 0.5)
@@ -654,7 +676,7 @@ class JeKPiso3 extends StatelessWidget {
           Expanded(
             child: Stack(
               children: [
-                Container(
+                SizedBox(
                   width: 900,
                   height: 900,
                   child: InteractiveViewer(
@@ -667,7 +689,6 @@ class JeKPiso3 extends StatelessWidget {
                     child: Image.asset('assets/PlantaBlocoJeK_T_Andar.jpg'),
                   ),
                 ),
-
                 Positioned(
                   top: 10,
                   right: 10,
@@ -679,10 +700,9 @@ class JeKPiso3 extends StatelessWidget {
                     child: IconButton(
                       iconSize: 40,
                       icon: const Icon(Icons.keyboard_arrow_down_rounded),
-                      onPressed: () async{
-                        await showDialog(context: context,
-                            builder: (_) => JeKPiso2()
-                        );
+                      onPressed: () async {
+                        await showDialog(
+                            context: context, builder: (_) => const JeKPiso2());
                         Navigator.of(context).pop();
                       },
                     ),
@@ -695,6 +715,7 @@ class JeKPiso3 extends StatelessWidget {
           const Text(
             'DICA: USE O CELULAR NA HORIZONTAL!',
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            textAlign: TextAlign.center,
           ),
           const SizedBox(height: 20),
         ],
@@ -704,10 +725,12 @@ class JeKPiso3 extends StatelessWidget {
 }
 
 class LabEnf extends StatelessWidget {
+  const LabEnf({super.key});
+
   @override
   Widget build(BuildContext context) {
     TransformationController _transformationController =
-    TransformationController();
+        TransformationController();
 
     _transformationController.value = Matrix4.identity()
       ..translate(0.5, 0.5)
@@ -721,7 +744,7 @@ class LabEnf extends StatelessWidget {
           Expanded(
             child: Stack(
               children: [
-                Container(
+                SizedBox(
                   width: 900,
                   height: 900,
                   child: InteractiveViewer(
@@ -745,10 +768,10 @@ class LabEnf extends StatelessWidget {
                     child: IconButton(
                       iconSize: 40,
                       icon: const Icon(Icons.keyboard_arrow_down_rounded),
-                      onPressed: () async{
-                        await showDialog(context: context,
-                            builder: (_) => LabEnfInf()
-                        );
+                      onPressed: () async {
+                        await showDialog(
+                            context: context,
+                            builder: (_) => const LabEnfInf());
                         Navigator.of(context).pop();
                       },
                     ),
@@ -761,6 +784,7 @@ class LabEnf extends StatelessWidget {
           const Text(
             'DICA: USE O CELULAR NA HORIZONTAL!',
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            textAlign: TextAlign.center,
           ),
           const SizedBox(height: 20),
         ],
@@ -770,10 +794,12 @@ class LabEnf extends StatelessWidget {
 }
 
 class LabEnfInf extends StatelessWidget {
+  const LabEnfInf({super.key});
+
   @override
   Widget build(BuildContext context) {
     TransformationController _transformationController =
-    TransformationController();
+        TransformationController();
 
     _transformationController.value = Matrix4.identity()
       ..translate(0.5, 0.5)
@@ -787,7 +813,7 @@ class LabEnfInf extends StatelessWidget {
           Expanded(
             child: Stack(
               children: [
-                Container(
+                SizedBox(
                   width: 900,
                   height: 900,
                   child: InteractiveViewer(
@@ -811,10 +837,9 @@ class LabEnfInf extends StatelessWidget {
                     child: IconButton(
                       iconSize: 40,
                       icon: const Icon(Icons.keyboard_arrow_up_rounded),
-                      onPressed: () async{
-                        await showDialog(context: context,
-                            builder: (_) => LabEnf()
-                        );
+                      onPressed: () async {
+                        await showDialog(
+                            context: context, builder: (_) => const LabEnf());
                         Navigator.of(context).pop();
                       },
                     ),
@@ -827,6 +852,7 @@ class LabEnfInf extends StatelessWidget {
           const Text(
             'DICA: USE O CELULAR NA HORIZONTAL!',
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            textAlign: TextAlign.center,
           ),
           const SizedBox(height: 20),
         ],
@@ -836,10 +862,12 @@ class LabEnfInf extends StatelessWidget {
 }
 
 class BlocoOT extends StatelessWidget {
+  const BlocoOT({super.key});
+
   @override
   Widget build(BuildContext context) {
     TransformationController _transformationController =
-    TransformationController();
+        TransformationController();
 
     _transformationController.value = Matrix4.identity()
       ..translate(0.5, 0.5)
@@ -853,7 +881,7 @@ class BlocoOT extends StatelessWidget {
           Expanded(
             child: Stack(
               children: [
-                Container(
+                SizedBox(
                   width: 900,
                   height: 900,
                   child: InteractiveViewer(
@@ -877,10 +905,9 @@ class BlocoOT extends StatelessWidget {
                     child: IconButton(
                       iconSize: 40,
                       icon: const Icon(Icons.keyboard_arrow_up_rounded),
-                      onPressed: () async{
-                        await showDialog(context: context,
-                            builder: (_) => BlocoO1()
-                        );
+                      onPressed: () async {
+                        await showDialog(
+                            context: context, builder: (_) => const BlocoO1());
                         Navigator.of(context).pop();
                       },
                     ),
@@ -893,6 +920,7 @@ class BlocoOT extends StatelessWidget {
           const Text(
             'DICA: USE O CELULAR NA HORIZONTAL!',
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            textAlign: TextAlign.center,
           ),
           const SizedBox(height: 20),
         ],
@@ -902,10 +930,12 @@ class BlocoOT extends StatelessWidget {
 }
 
 class BlocoO1 extends StatelessWidget {
+  const BlocoO1({super.key});
+
   @override
   Widget build(BuildContext context) {
     TransformationController _transformationController =
-    TransformationController();
+        TransformationController();
 
     _transformationController.value = Matrix4.identity()
       ..translate(0.5, 0.5)
@@ -919,7 +949,7 @@ class BlocoO1 extends StatelessWidget {
           Expanded(
             child: Stack(
               children: [
-                Container(
+                SizedBox(
                   width: 900,
                   height: 900,
                   child: InteractiveViewer(
@@ -943,10 +973,9 @@ class BlocoO1 extends StatelessWidget {
                     child: IconButton(
                       iconSize: 40,
                       icon: const Icon(Icons.keyboard_arrow_up_rounded),
-                      onPressed: () async{
-                        await showDialog(context: context,
-                            builder: (_) => BlocoOT()
-                        );
+                      onPressed: () async {
+                        await showDialog(
+                            context: context, builder: (_) => const BlocoOT());
                         Navigator.of(context).pop();
                       },
                     ),
@@ -959,6 +988,7 @@ class BlocoO1 extends StatelessWidget {
           const Text(
             'DICA: USE O CELULAR NA HORIZONTAL!',
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            textAlign: TextAlign.center,
           ),
           const SizedBox(height: 20),
         ],
@@ -968,10 +998,12 @@ class BlocoO1 extends StatelessWidget {
 }
 
 class ClinicaOd extends StatelessWidget {
+  const ClinicaOd({super.key});
+
   @override
   Widget build(BuildContext context) {
     TransformationController _transformationController =
-    TransformationController();
+        TransformationController();
 
     _transformationController.value = Matrix4.identity()
       ..translate(0.5, 0.5)
@@ -985,7 +1017,7 @@ class ClinicaOd extends StatelessWidget {
           Expanded(
             child: Stack(
               children: [
-                Container(
+                SizedBox(
                   width: 900,
                   height: 900,
                   child: InteractiveViewer(
@@ -1005,6 +1037,7 @@ class ClinicaOd extends StatelessWidget {
           const Text(
             'DICA: USE O CELULAR NA HORIZONTAL!',
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            textAlign: TextAlign.center,
           ),
           const SizedBox(height: 20),
         ],
@@ -1014,10 +1047,12 @@ class ClinicaOd extends StatelessWidget {
 }
 
 class BlocoLTerreo extends StatelessWidget {
+  const BlocoLTerreo({super.key});
+
   @override
   Widget build(BuildContext context) {
     TransformationController _transformationController =
-    TransformationController();
+        TransformationController();
 
     _transformationController.value = Matrix4.identity()
       ..translate(0.5, 0.5)
@@ -1031,7 +1066,7 @@ class BlocoLTerreo extends StatelessWidget {
           Expanded(
             child: Stack(
               children: [
-                Container(
+                SizedBox(
                   width: 900,
                   height: 900,
                   child: InteractiveViewer(
@@ -1055,10 +1090,10 @@ class BlocoLTerreo extends StatelessWidget {
                     child: IconButton(
                       iconSize: 40,
                       icon: const Icon(Icons.keyboard_arrow_up_rounded),
-                      onPressed: () async{
-                        await showDialog(context: context,
-                            builder: (_) => BlocoLPiso1()
-                        );
+                      onPressed: () async {
+                        await showDialog(
+                            context: context,
+                            builder: (_) => const BlocoLPiso1());
                         Navigator.of(context).pop();
                       },
                     ),
@@ -1071,6 +1106,7 @@ class BlocoLTerreo extends StatelessWidget {
           const Text(
             'DICA: USE O CELULAR NA HORIZONTAL!',
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            textAlign: TextAlign.center,
           ),
           const SizedBox(height: 20),
         ],
@@ -1080,10 +1116,12 @@ class BlocoLTerreo extends StatelessWidget {
 }
 
 class BlocoLPiso1 extends StatelessWidget {
+  const BlocoLPiso1({super.key});
+
   @override
   Widget build(BuildContext context) {
     TransformationController _transformationController =
-    TransformationController();
+        TransformationController();
 
     _transformationController.value = Matrix4.identity()
       ..translate(0.5, 0.5)
@@ -1097,7 +1135,7 @@ class BlocoLPiso1 extends StatelessWidget {
           Expanded(
             child: Stack(
               children: [
-                Container(
+                SizedBox(
                   width: 900,
                   height: 900,
                   child: InteractiveViewer(
@@ -1121,10 +1159,10 @@ class BlocoLPiso1 extends StatelessWidget {
                     child: IconButton(
                       iconSize: 40,
                       icon: const Icon(Icons.keyboard_arrow_down_rounded),
-                      onPressed: () async{
-                        await showDialog(context: context,
-                            builder: (_) => BlocoLTerreo()
-                        );
+                      onPressed: () async {
+                        await showDialog(
+                            context: context,
+                            builder: (_) => const BlocoLTerreo());
                         Navigator.of(context).pop();
                       },
                     ),
@@ -1137,6 +1175,7 @@ class BlocoLPiso1 extends StatelessWidget {
           const Text(
             'DICA: USE O CELULAR NA HORIZONTAL!',
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            textAlign: TextAlign.center,
           ),
           const SizedBox(height: 20),
         ],
@@ -1146,10 +1185,12 @@ class BlocoLPiso1 extends StatelessWidget {
 }
 
 class Quadra extends StatelessWidget {
+  const Quadra({super.key});
+
   @override
   Widget build(BuildContext context) {
     TransformationController _transformationController =
-    TransformationController();
+        TransformationController();
 
     _transformationController.value = Matrix4.identity()
       ..translate(0.5, 0.5)
@@ -1163,7 +1204,7 @@ class Quadra extends StatelessWidget {
           Expanded(
             child: Stack(
               children: [
-                Container(
+                SizedBox(
                   width: 900,
                   height: 900,
                   child: InteractiveViewer(
@@ -1183,6 +1224,7 @@ class Quadra extends StatelessWidget {
           const Text(
             'DICA: USE O CELULAR NA HORIZONTAL!',
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            textAlign: TextAlign.center,
           ),
           const SizedBox(height: 20),
         ],
