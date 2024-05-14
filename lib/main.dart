@@ -56,9 +56,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
   List<LatLng> polylinePoints = [];
 
-  double shortestDistance = double.infinity;
-  LatLng? closestCoordinate;
-
   double? heading = 0;
 
   void processLatLngList(List<LatLng> userLocations, List<LatLng> interpointIni,
@@ -492,7 +489,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: GestureDetector(
                       onTap: () async {
                         await showDialog(
-                            context: context, builder: (_) => CDETerreo());
+                            context: context,
+                            builder: (_) => const CDETerreo());
                       },
                       child: Container(
                         padding: const EdgeInsets.symmetric(
@@ -523,7 +521,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: GestureDetector(
                       onTap: () async {
                         await showDialog(
-                            context: context, builder: (_) => FeGTerreo());
+                            context: context,
+                            builder: (_) => const FeGTerreo());
                       },
                       child: Container(
                         padding: const EdgeInsets.symmetric(
@@ -554,7 +553,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: GestureDetector(
                       onTap: () async {
                         await showDialog(
-                            context: context, builder: (_) => JeKTerreo());
+                            context: context,
+                            builder: (_) => const JeKTerreo());
                       },
                       child: Container(
                         padding: const EdgeInsets.symmetric(
@@ -585,7 +585,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: GestureDetector(
                       onTap: () async {
                         await showDialog(
-                            context: context, builder: (_) => LabEnf());
+                            context: context, builder: (_) => const LabEnf());
                       },
                       child: Container(
                         padding: const EdgeInsets.symmetric(
@@ -616,7 +616,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: GestureDetector(
                       onTap: () async {
                         await showDialog(
-                            context: context, builder: (_) => BlocoOT());
+                            context: context, builder: (_) => const BlocoOT());
                       },
                       child: Container(
                         padding: const EdgeInsets.symmetric(
@@ -647,7 +647,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: GestureDetector(
                       onTap: () async {
                         await showDialog(
-                            context: context, builder: (_) => ClinicaOd());
+                            context: context,
+                            builder: (_) => const ClinicaOd());
                       },
                       child: Container(
                         padding: const EdgeInsets.symmetric(
@@ -678,7 +679,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: GestureDetector(
                       onTap: () async {
                         await showDialog(
-                            context: context, builder: (_) => BlocoLTerreo());
+                            context: context,
+                            builder: (_) => const BlocoLTerreo());
                       },
                       child: Container(
                         padding: const EdgeInsets.symmetric(
@@ -709,7 +711,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: GestureDetector(
                       onTap: () async {
                         await showDialog(
-                            context: context, builder: (_) => Quadra());
+                            context: context, builder: (_) => const Quadra());
                       },
                       child: Container(
                         padding: const EdgeInsets.symmetric(
