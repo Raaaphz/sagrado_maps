@@ -16,150 +16,180 @@ class Creditos extends StatelessWidget {
           ),
         ),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20.0),
-              child: Align(
-                alignment: Alignment.centerLeft,
-                child: Text(
-                  'DESENVOLVIMENTO DE SOFTWARE',
-                  style: TextStyle(fontSize: 27.0, fontWeight: FontWeight.bold),
-                  textAlign: TextAlign.center,
+      body: SingleChildScrollView(
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20.0),
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    'DESENVOLVIMENTO DE SOFTWARE',
+                    style:
+                        TextStyle(fontSize: 27.0, fontWeight: FontWeight.bold),
+                    textAlign: TextAlign.center,
+                  ),
                 ),
               ),
-            ),
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20.0),
-              child: Align(
-                alignment: Alignment.centerLeft,
-                child: Text(
-                  'Professor:',
-                  style: TextStyle(fontSize: 25.0, fontWeight: FontWeight.bold),
-                  textAlign: TextAlign.justify,
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20.0),
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    'Professor:',
+                    style:
+                        TextStyle(fontSize: 25.0, fontWeight: FontWeight.bold),
+                    textAlign: TextAlign.justify,
+                  ),
                 ),
               ),
-            ),
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20.0),
-              child: Align(
-                alignment: Alignment.centerLeft,
-                child: Text(
-                  'Prof. Dr. Elvio Gilberto da Silva',
-                  style: TextStyle(fontSize: 22.0),
-                  textAlign: TextAlign.justify,
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20.0),
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    'Prof. Dr. Elvio Gilberto da Silva',
+                    style: TextStyle(fontSize: 22.0),
+                    textAlign: TextAlign.justify,
+                  ),
                 ),
               ),
-            ),
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20.0),
-              child: Align(
-                alignment: Alignment.centerLeft,
-                child: Text(
-                  'Grupo:',
-                  style: TextStyle(fontSize: 25.0, fontWeight: FontWeight.bold),
-                  textAlign: TextAlign.justify,
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20.0),
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    'Grupo:',
+                    style:
+                        TextStyle(fontSize: 25.0, fontWeight: FontWeight.bold),
+                    textAlign: TextAlign.justify,
+                  ),
                 ),
               ),
-            ),
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20.0),
-              child: Align(
-                alignment: Alignment.centerLeft,
-                child: Text(
-                  'Raphael Camurri Michelassi',
-                  style: TextStyle(fontSize: 22.0),
-                  textAlign: TextAlign.justify,
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20.0),
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    'Raphael Camurri Michelassi',
+                    style: TextStyle(fontSize: 22.0),
+                    textAlign: TextAlign.justify,
+                  ),
                 ),
               ),
-            ),
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20.0),
-              child: Align(
-                alignment: Alignment.centerLeft,
-                child: Text(
-                  'Victor Hugo de Deus Machado',
-                  style: TextStyle(fontSize: 22.0),
-                  textAlign: TextAlign.justify,
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20.0),
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    'Victor Hugo de Deus Machado',
+                    style: TextStyle(fontSize: 22.0),
+                    textAlign: TextAlign.justify,
+                  ),
                 ),
               ),
-            ),
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20.0),
-              child: Align(
-                alignment: Alignment.centerLeft,
-                child: Text(
-                  'Guilherme Augusto dos Santos',
-                  style: TextStyle(fontSize: 22.0),
-                  textAlign: TextAlign.justify,
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20.0),
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    'Guilherme Augusto dos Santos',
+                    style: TextStyle(fontSize: 22.0),
+                    textAlign: TextAlign.justify,
+                  ),
                 ),
               ),
-            ),
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20.0),
-              child: Align(
-                alignment: Alignment.centerLeft,
-                child: Text(
-                  'Matheus Arquer Rodrigues',
-                  style: TextStyle(fontSize: 22.0),
-                  textAlign: TextAlign.justify,
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20.0),
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    'Matheus Arquer Rodrigues',
+                    style: TextStyle(fontSize: 22.0),
+                    textAlign: TextAlign.justify,
+                  ),
                 ),
               ),
-            ),
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20.0),
-              child: Align(
-                alignment: Alignment.centerLeft,
-                child: Text(
-                  'Mateus Fernandes da Silva',
-                  style: TextStyle(fontSize: 22.0),
-                  textAlign: TextAlign.justify,
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20.0),
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    'Mateus Fernandes da Silva',
+                    style: TextStyle(fontSize: 22.0),
+                    textAlign: TextAlign.justify,
+                  ),
                 ),
               ),
-            ),
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20.0),
-              child: Align(
-                alignment: Alignment.centerLeft,
-                child: Text(
-                  'Pedro Sitoni Gomes Peixe',
-                  style: TextStyle(fontSize: 22.0),
-                  textAlign: TextAlign.justify,
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20.0),
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    'Pedro Sitoni Gomes Peixe',
+                    style: TextStyle(fontSize: 22.0),
+                    textAlign: TextAlign.justify,
+                  ),
                 ),
               ),
-            ),
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20.0),
-              child: Align(
-                alignment: Alignment.centerLeft,
-                child: Text(
-                  'Desenvolvimento: ',
-                  style: TextStyle(fontSize: 25.0, fontWeight: FontWeight.bold),
-                  textAlign: TextAlign.justify,
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20.0),
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    'Colaboradores:',
+                    style:
+                        TextStyle(fontSize: 25.0, fontWeight: FontWeight.bold),
+                    textAlign: TextAlign.justify,
+                  ),
                 ),
               ),
-            ),
-            Image.asset(
-              'assets/Ciencia_da_Computacao.jpg',
-            ),
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20.0),
-              child: Align(
-                alignment: Alignment.centerLeft,
-                child: Text(
-                  'Apoio: ',
-                  style: TextStyle(fontSize: 25.0, fontWeight: FontWeight.bold),
-                  textAlign: TextAlign.justify,
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20.0),
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    'Vectorsmarket15',
+                    style: TextStyle(fontSize: 22.0),
+                    textAlign: TextAlign.justify,
+                  ),
                 ),
               ),
-            ),
-            Image.asset(
-              'assets/coordenadoria-de-extensao.jpg',
-            ),
-          ],
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20.0),
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    'Desenvolvimento: ',
+                    style:
+                        TextStyle(fontSize: 25.0, fontWeight: FontWeight.bold),
+                    textAlign: TextAlign.justify,
+                  ),
+                ),
+              ),
+              Image.asset(
+                'assets/Ciencia_da_Computacao.jpg',
+              ),
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20.0),
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    'Apoio: ',
+                    style:
+                        TextStyle(fontSize: 25.0, fontWeight: FontWeight.bold),
+                    textAlign: TextAlign.justify,
+                  ),
+                ),
+              ),
+              Image.asset(
+                'assets/coordenadoria-de-extensao.jpg',
+              ),
+            ],
+          ),
         ),
       ),
     );
